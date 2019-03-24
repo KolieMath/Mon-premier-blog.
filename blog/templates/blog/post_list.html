@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mathias's Blog</title>
+    </head>
+    <body>
+        <div>
+            <h1><a href="/">Mathias's Blog</a></h1>
+        </div>
+
+        {{posts}}
+        {% for post in posts %}
+		<p>{{post.post_title}}</p>
+		{% endfor %}
+
+    </body>
+</html>
